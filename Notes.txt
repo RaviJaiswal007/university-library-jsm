@@ -1,0 +1,98 @@
+~/Desktop/university-library
+npx create-next-app@latest
+
+y
+
+./
+Typescript? yes
+ESlint? yes
+Talvind Css Yes
+src/directory NO
+app router? yes
+turbopack? yes
+import alias NO
+
+Step 2: setup shadcn/ui
+
+Next 15 + react 19
+
+npx shadcn@latest init
+Newyork
+slate
+
+
+//to add button
+npx shadcn@latest add button
+
+
+modify the component/ui/button.tsx
+
+import Image from "next?image";
+import {Button} from @/component/ui/button
+
+export default function Home(){
+return(
+	<>
+	 <Button>Click me</Button>
+	</>
+)
+}
+
+-----------------
+npm run dev
+-----------------
+
+install plugin-->
+eslint
+Prettier
+
+
+configure prettier and eslint
+-----------------------------
+not able to configure for above
+
+
+extensions
+-----------
+1: react snippet
+2: Rainbow bracket
+
+
+modify the component/ui/button.tsx to ES6
+-------------------------------
+
+import Image from "next?image";
+import {Button} from @/component/ui/button
+
+const Home = () => (
+	<>
+	 <Button>Click me</Button>
+	</>
+);
+
+export default Home;
+
+
+===============================23:26
+1: go to talwind.config.ts
+	change with snippet code from git hub repo of talwind.config.ts
+
+2: go to globals.css
+	change with snippet code from git hub repo of globals.css
+
+3: go to git hub repo find font zip and unzip it and paste it into the project /app
+
+4: modify the layout.tsx
+
+
+-----------------
+Home layout
+--------------
+start working from 
+
+src/app/(auth)->
+	sign-up->
+		page.tsx (start working from here)
+	sign-in->
+		page.tsx (start working from here)
+	layout.tsx
