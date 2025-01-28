@@ -9,14 +9,14 @@ import { headers } from "next/headers";
 import ratelimit from "@/lib/ratelimit";
 import { redirect } from "next/navigation";
 // import { workflowClient } from "@/lib/workflow";
-import config from "@/lib/config";
+// import config from "@/lib/config";
 
 export const signInWithCredentials = async (
   params: Pick<AuthCredentials, "email" | "password">,
 ) => {
   const { email, password } = params;
 
-  // gettin the ip adderess of the user who is trying to login
+  // getting the ip adderess of the user who is trying to login
   const ip = (await headers()).get("x-forwarded-for") || "127.0.0.1";
   const { success } = await ratelimit.limit(ip); 
 
